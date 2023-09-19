@@ -2,7 +2,7 @@ use image::GenericImageView;
 
 extern crate image;
 
-// The possible Anaglyph colors. From [Wikipedia](https://en.wikipedia.org/wiki/Anaglyph_3D#Anaglyphic_color_channels)
+/// The possible Anaglyph colors listed [here](https://en.wikipedia.org/wiki/Anaglyph_3D#Anaglyphic_color_channels).
 pub enum Coloring {
     RedGreen,
     RedBlue,
@@ -24,13 +24,13 @@ const PUREMAGENTA: [f32 ; 3] = [255./255., 0./255., 255./255.];
 const AMBER: [f32 ; 3] = [255./255., 191./255., 0./255.];
 const DARKBLUE: [f32 ; 3] = [0./255., 0./255., 153./255.];
 
-/// Creates the anaglyph from the given file, and saves it in the same format.
+/// Creates the anaglyph from the given file, and saves it in the output file.
 /// 
-/// * `input_file` - The path to the input file.
-/// * `output_file` - The path to the output file.
+/// * `input_file` - The name of the input file.
+/// * `output_file` - The name of the output file.
 /// * `offset_x` - The horizontal difference between the two colors.
 /// * `offset_y` - The vertical difference between the two colors.
-/// * `coloring` - One of the anaglyph color couples.
+/// * `coloring` - One of the anaglyph [Coloring] couples.
 pub fn create(input_file: &str, output_file: &str, offset_x: isize, offset_y: isize, coloring: Coloring) -> () {
     let offset_x = offset_x /2; 
     let offset_y = offset_y /2;
