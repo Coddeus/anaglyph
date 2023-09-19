@@ -13,4 +13,4 @@ categories = ["multimedia::images"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-image = "*"
+image = "0.24.7"
