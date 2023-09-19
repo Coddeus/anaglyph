@@ -1,0 +1,16 @@
+[package]
+name = "anaglyph"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "An anaglyph maker"
+documentation = "https://docs.rs/anaglyph"
+repository = "https://github.com/Coddeus/anaglyph"
+readme = "README.md"
+keywords = ["anaglyph", "buggy", "colors", "2Dto3D"]
+categories = ["multimedia::images"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "*"
