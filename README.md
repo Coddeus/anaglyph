@@ -4,6 +4,7 @@ This crate produces [anaglyphs](https://en.wikipedia.org/wiki/Anaglyph_3D) from 
 Choose your input image, the output filename, the horizontal/vertical offsets between the two colors, and the two colors.  
 The output color couples are the ones listed [here](https://en.wikipedia.org/wiki/Anaglyph_3D#Anaglyphic_color_channels).
 
+📺 Development detailed [here](https://www.youtube.com/watch?v=uCrrtXs3p4w).  
 License: MIT OR Apache-2.0
 
 ## Example usage:
